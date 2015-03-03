@@ -21,7 +21,7 @@ png(filename = "plot3.png",                        # output file name
 ## Create plot
 with(data_sub, {
     plot(DateTime, Sub_metering_1, 
-         ylab = "Energy sub metering",          # y-axis title
+         ylab = "Energy sub metering",             # y-axis title
          xlab = NA,                                # x-axis title
          type = "l")                               # plot type ("l" for line)
     
