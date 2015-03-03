@@ -1,5 +1,6 @@
 ## Read in full dataset
-data = read.table("household_power_consumption.txt", sep=";", dec=".", header = TRUE,
+data = read.table("household_power_consumption.txt", 
+                  sep=";", dec=".", header = TRUE, 
                   stringsAsFactors=FALSE, na.strings = "?",
                   colClasses=c(rep("character",2), rep("numeric",7)))
 

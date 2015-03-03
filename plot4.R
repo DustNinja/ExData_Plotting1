@@ -26,7 +26,7 @@ with(data_sub, {
     plot(DateTime, Global_active_power, 
          ylab = "Global Active Power",             # y-axis title
          xlab = NA,                                # x-axis title
-         type="l")                                 # plot type ("l" for line)
+         type = "l")                                 # plot type ("l" for line)
 })
 
 #~~~~~~~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ with(data_sub, {
     plot(DateTime, Voltage, 
          ylab = "Voltage",                         # y-axis title
          xlab = "datetime",                        # x-axis title
-         type="l")                                 # plot type ("l" for line)
+         type = "l")                                 # plot type ("l" for line)
     
 })
 
@@ -47,7 +47,7 @@ with(data_sub, {
     plot(DateTime, Sub_metering_1, 
          ylab = "Energy sub metering",             # y-axis title
          xlab = NA,                                # x-axis title
-         type="l")                                 # plot type ("l" for line)
+         type = "l")                                 # plot type ("l" for line)
     
     # overlay lines
     lines(DateTime, Sub_metering_2, col="Red")
@@ -69,7 +69,7 @@ legend("topright",                                 # location
 with(data_sub, {
     plot(DateTime, Global_reactive_power, 
          xlab = "datetime",                        # x-axis title
-         type="l")                                 # plot type ("l" for line)
+         type = "l")                                 # plot type ("l" for line)
     
 })
 
