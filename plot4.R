@@ -1,5 +1,6 @@
 ## Read in full dataset
-data = read.table("household_power_consumption.txt", sep=";", dec=".", header = TRUE,
+data = read.table("household_power_consumption.txt", 
+                  sep=";", dec=".", header = TRUE, 
                   stringsAsFactors=FALSE, na.strings = "?",
                   colClasses=c(rep("character",2), rep("numeric",7)))
 
@@ -8,7 +9,8 @@ data_sub <- data[(data$Date=="1/2/2007" | data$Date=="2/2/2007"), ]
 rm(data)
 
 ## Convert date/time
-data_sub$DateTime <- strptime(paste(data_sub$Date,data_sub$Time),"%d/%m/%Y %H:%M:%S")
+data_sub$DateTime <- strptime(paste(data_sub$Date,data_sub$Time),
+                              "%d/%m/%Y %H:%M:%S")
 
 ## Create PNG file
 png(filename = "plot4.png",                        # output file name
